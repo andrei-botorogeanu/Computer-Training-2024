@@ -1,0 +1,108 @@
+Teoria grafurilor
+-----------------
+
+Graf => orice mulțime finită V, prevazută cu o relație binară E.
+Si notam graful cu G = (V, E)
+
+V = o multime finita
+E = o relatie binara
+
+E = {(1,2),(1,3),(2,1),(2,2)} - relatie binara
+
+Graficul unei functii = o submultime a produsului cartezian
+
+M = {1,2,3}
+{1,2,3}
+{1,2,3}
+M x M = produsul cartezian al multimii MxM
+{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3)}
+
+E = o relatie binara poate fi o submultime a produsului cartezian
+
+Graf neorientat = un graf neorientat G = (V, E) in care
+relatia binara  este simetrica
+
+(x,y) apartine lui E , atunci (y,x) apartine lui E
+
+Graf orientat => un graf  G = (V, E) , in care relatia binara nu este simetrica
+
+
+G = (V, E)
+V = {1,2,3}
+E = {(1,2),(2,1),(3,1)}
+
+graful este orientat
+
+
+G = (V, E)
+V = {1,2,3}
+E = {(1,2),(2,1),(1,3),(3,1)}
+
+graf neorientat
+
+
+Nod = orice element al multimii V , unde G = (V, E) graf orientat
+1,2,3 = nod
+
+Varf = orice element al multimii V, unde G = (V, E) graf orientat sau neorientat
+
+Muchie = element al multimii E ce descrie o relatie existenta intre doua varfuri V,
+unde G = (V, E) este un graf neorientat.
+
+
+Arc = element al multimii E ce descrie o relatie existenta intre doua varfuri din V
+unde G = (V, E) un graf orientat.
+
+Arcele sunt parcurse in directia data de relatia varf -> succesor direct
+Muchiile unui graf neorientat sunt considerate ca neavand directie, deci pot fi parcurse in ambele sensuri
+
+Adiacenta = varful x este adiacent cu varful y daca perechea
+(x,y) apartine lui E. Intr-un graf neorientat presupunem existanta muchiei (x,y)
+atunci x este adiacent cu y
+
+Incidenta = o muchie este incidenta cu un nod daca il are pe acesta ca extremitate.
+
+Incidenta spre interior => un arc este incident spre interior cu un varf,
+daca il are pe acesta ca varf terminal (arcul converge spre varf).
+
+Incidenta spre exterior => un arc este incident spre exterior cu un varf daca il are pe acesta ca varf intial. arcul
+pleaca din varf.
+
+Grad interior = in cazul unui graf orientat, fiecare nod are asociat un numar numit
+grad interior si care este egal cu numarul de arce care intra pe V
+
+Grad exterior = in cazul unui graf orientat, fiecare nod are asociat  un numar numit grad exterior
+si care este egal cu numarul de arce care il au pe v ca varf initial (numarul de arce incidente spre exterior)
+
+Varf izolat = un varf care are gradul 0
+
+Lant = este o secventa de noduri ale unui graf neorientat G = (V, E)
+cu proprietatea ca oricare doua noduri consecutive sunt adiacente.
+
+Lungimea unui lant = numarul de muchii din care este format.
+
+Lant simplu = lantul care contine numari muchii distincte
+
+Lant compus = lantul care contine numai noduri distincte.
+
+Ciclu = un lant in care primul nod coincide cu ultimul nod
+
+Drum = este o secventa de varfuri ale unui graf orientat G = (V , E)
+cu proprietatea ca oricare doua varfuri consecutive sunt adiacente.
+
+Lungimea unui drum = numarul de arce din care este format.
+
+Drum simplu = drumul care contine numai arce distincte.
+
+Drum elementar = drumul care contine numai varfuri distincte.
+
+Circuit = un drum in care primul varf coincide cu ultimul varf. Circuitul este
+elementar daca este format doar din varfuri distincte, exceptie facand primul si ultimul.
+
+Graf partial = Un graf G = (V, E') reprezinta un graf partial al grafului
+
+G' = (V, E) daca E' inclus in E. Cu alte cuvinte G' este graf partial al lui G daca este identic
+sau se obtine prin suprimarea unor muchii.
+
+
+Subgraf
